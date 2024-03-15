@@ -24,14 +24,13 @@
     <img src="https://img.huffingtonpost.com/asset/5d021d7f2400009d178c75d2.jpeg?ops=scalefit_960_noupscale" width="1600" height="1060" alt="Hero Image">
     <div class="hero-text">
         <h1>Hyderabad Woofs Rescue</h1>
-        <p>You can't change a dog's past,<span class="highlight-black">but you can rewrite it's future<br><br><br></span></p>
+        <p>You can't change a dog's past, but you can rewrite its future</p><br><br>
         <div class="hero-buttons">
             <a href="#adopt" class="button">Adopt</a>
-            <a href="#donate" class="button">Donate</a>
+            <a href="#" class="button" id="donate-button">Donate</a>
         </div>
     </div>
 </div>
-
 
 <section id="mission">
     <div class="mission-container">
@@ -44,6 +43,8 @@
             Join us in our mission to build a brighter future for them, one step at a time.</p>
     </div>
 </section>
+
+
 
 <section id="events">
     <div class="event-container">
@@ -100,6 +101,18 @@
     <footer>
         <p>&copy; 2024 Nonprofit Organization. All rights reserved.</p>
     </footer>
+    <script>
+        var donateButton = document.getElementById("donate-button");
+    
+        donateButton.addEventListener("click", function() {
+            var confirmation = confirm("Redirect to GoFundMe page?");
+            
+            if (confirmation) {
+                window.location.href = "https://www.gofundme.com/";
+            }
+        });
+    </script>
+    
     </body>
     </html>
     
